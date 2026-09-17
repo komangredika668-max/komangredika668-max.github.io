@@ -1,155 +1,365 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth"> 
+<html lang="id" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Janu Putra | Portofolio</title>
-<link href="./src/output.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janu Putra | Portofolio</title>
+  <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class="font-body antialiased bg-gray-50">
-
+<body class="font-body antialiased bg-gray-50 text-gray-900">
   <!-- NAV -->
-  <header class="sticky top-0 bg-gray-900">
-    <nav class="max-w-4xl mx-auto py-4 flex items-center justify-between">
-      <h1 class="font-display text-xl font-bold text-white">Portofolio</h1>
-      <div class="hidden sm:flex items-center gap-10 text-sm font-bold text-white">
-        <a href="#Home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skill</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-md shadow-md">
+    <nav class="max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
+      <h1 class="font-display text-xl font-bold text-white tracking-wide">
+        Portofolio
+      </h1>
+      <div class="hidden sm:flex items-center gap-8 text-sm font-bold text-white">
+        <a href="#Home" class="nav-link transition duration-300 hover:text-violet-400">Home</a>
+        <a href="#about" class="nav-link transition duration-300 hover:text-violet-400">About</a>
+        <a href="#skills" class="nav-link transition duration-300 hover:text-violet-400">Skill</a>
+        <a href="#experience" class="nav-link transition duration-300 hover:text-violet-400">Experience & Project</a>
+        <a href="#education" class="nav-link transition duration-300 hover:text-violet-400">Education</a>
+        <a href="#contact" class="nav-link transition duration-300 hover:text-violet-400">Contact</a>
       </div>
     </nav>
   </header>
-
   <main class="bg-gray-50">
-
     <!-- HERO -->
-    <section id="Home"class=" scroll-mt-30 max-w-4xl mx-auto px-6 pt-16 pb-14 md:pt-24 md:pb-20  rounded-2xl h-130 mt-12 bg-white shadow-xl">
+    <section id="Home"
+      class="scroll-mt-30 max-w-4xl mx-auto px-6 pt-16 pb-14 md:pt-20 md:pb-20 rounded-2xl h-130 mt-12 bg-white shadow-xl transition duration-500 hover:shadow-2xl">
       <div class="grid md:grid-cols-[1.3fr_1fr] gap-10 items-center ml-3">
         <div>
-          <h1 class="text-2xl font-semibold">I Nyoman Redika Janu Putra</h1>
-          <p class="mt-4 text-md">You Can Call Me</p>
-          <h1 class="font-display text-6xl mt-2 font-bold">Janu Putra</h1>
-          <p class="mt-4 text-lg">Beginner Web Developer</p>
-          <p class="mt-5 max-w-md text-md leading-relaxed">
-            Informatics Engineering student who is currently studying web development from designing the appearance to tidying up the logic behind it.
+          <p class="text-lg text-gray-500">
+            Hello Everyone
+          </p>
+          <h1 class="mt-2 text-2xl font-semibold">
+            I Nyoman Redika Janu Putra
+          </h1>
+          <p class="mt-4 text-md text-gray-500">
+            You Can Call Me
+          </p>
+          <!-- NAMA DENGAN AKSEN -->
+          <h1 class="font-display text-6xl mt-2 font-bold tracking-tight">
+            Janu <span class="text-violet-600">Putra</span>
+          </h1>
+          <p class="mt-4 text-lg font-medium text-gray-700">
+            Beginner Web Developer
+          </p>
+          <p class="mt-5 max-w-md text-md leading-relaxed text-gray-600">
+            Informatics Engineering student who is currently studying web development from designing the appearance to
+            tidying up the logic behind it.
           </p>
           <div class="mt-7 flex gap-3">
-            <a href="#contact" class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium border bg-gray-900 text-white">Hubungi saya</a>
-            <a href="#skills" class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium border">Lihat keahlian</a>
+            <!-- BUTTON 1 -->
+            <a href="#contact"
+              class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium border border-gray-900 bg-gray-900 text-white transition duration-300 hover:-translate-y-1 hover:bg-violet-700 hover:border-violet-700 hover:shadow-lg">
+              Contact Me
+            </a>
+            <!-- BUTTON 2 -->
+            <a href="#skills"
+              class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium border border-gray-300 transition duration-300 hover:-translate-y-1 hover:border-violet-500 hover:text-violet-700 hover:shadow-md">
+              View skills
+            </a>
           </div>
         </div>
-        <!--Lingkaran-->
+        <!-- LINGKARAN FOTO -->
         <div class="justify-self-center">
-    <div class="w-44 h-44 md:w-68 md:h-68 bg-gray-900 rounded-full ml-15 flex items-center justify-center">
-        <img 
-            src="Asset/Janu12.jpeg" 
-            alt="foto profil Janu Putra"
-            class="w-44 h-44 md:w-64 md:h-64 rounded-full object-cover">
-    </div>
-  </div>
+          <div
+            class="w-44 h-44 md:w-68 md:h-68 from-gray-900 to-violet-700 rounded-full ml-15 flex items-center justify-center shadow-xl transition duration-500 hover:scale-105">
+            <img src="Asset/Janu12.jpeg" alt="foto profil Janu Putra"
+              class="w-44 h-44 md:w-64 md:h-64 rounded-full object-cover">
+          </div>
+        </div>
       </div>
     </section>
     <!-- ABOUT -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-16">
-      <h2 class="section-title text-center text-3xl font-bold">About Me</h2>
-      <div class="mt-10 mx-auto max-w-2xl text-md leading-relaxed">
+    <section id="about"
+      class="scroll-mt-45 pt-18 pb-25 max-w-4xl mx-auto px-6 py-16 rounded-2xl bg-white shadow-xl m-30 transition duration-500 hover:shadow-2xl">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-600">
+          Introduction
+        </p>
+        <h2 class="section-title mt-2 text-center text-3xl font-bold">
+          About Me
+        </h2>
+      </div>
+      <div class="mt-10 mx-auto max-w-3xl text-md leading-relaxed text-gray-600">
         <p>
-          I'm a Software Engineering Technology student who has been interested in web development since I started college. I enjoy learning how a web page is built—from its structure and appearance to the simple interactions within it.
+          I'm a Software Engineering Technology student who has been interested in web development since I started
+          college. I enjoy learning how a web page is built—from its structure and appearance to the simple interactions
+          within it.
         </p>
         <p class="mt-4">
-         I'm currently still learning and continuing to train myself through small projects, while getting used to writing clean and easy-to-understand code. I'm open to internship opportunities and collaborative projects to further hone my skills.
+          I'm currently still learning and continuing to train myself through small projects, while getting used to
+          writing clean and easy-to-understand code. I'm open to internship opportunities and collaborative projects to
+          further hone my skills.
         </p>
-      </div>    
+      </div>
     </section>
-
     <!-- SKILLS -->
-    <section id="skills" class="max-w-4xl mx-auto px-6 py-16 border-t">
-      <h2 class="section-title text-center text-3xl font-bold">Technical Skills</h2>
-      <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto ">
-        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">HTML</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">CSS</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">JavaScript</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">Tailwind CSS</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">Git &amp; GitHub</div>
-        <div class="skill-chip rounded-lg py-6 text-center font-bold border bg-white">Figma</div>
+    <section id="skills" class="overflow-hidden scroll-mt-45 px-6 py-6">
+      <div class="mx-auto max-w-5xl">
+        <div class="text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-600">
+            My Skills
+          </p>
+          <h2 class="mt-2 text-3xl font-bold md:text-4xl">
+            Technical Skills
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-gray-600">
+            Technologies and tools that I use while learning and
+            developing web projects.
+          </p>
+        </div>
+        <!-- ISI SKILLS -->
+        <div class="mt-16 grid grid-cols-2 gap-5 sm:grid-cols-3">
+          <div
+            class="group rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl">
+            <p class="text-lg font-bold transition group-hover:text-violet-700">HTML</p>
+            <p class="mt-2 text-sm text-gray-500">Structure &amp; Markup</p>
+          </div>
+          <div
+            class="group rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl">
+            <p class="text-lg font-bold transition group-hover:text-violet-700">CSS</p>
+            <p class="mt-2 text-sm text-gray-500">Styling &amp; Layout</p>
+          </div>
+          <div
+            class="group rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl">
+            <p class="text-lg font-bold transition group-hover:text-violet-700">JavaScript</p>
+            <p class="mt-2 text-sm text-gray-500">Interactive Web</p>
+          </div>
+          <div
+            class="group rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl">
+            <p class="text-lg font-bold transition group-hover:text-violet-700">Tailwind CSS</p>
+            <p class="mt-2 text-sm text-gray-500">Utility-first CSS</p>
+          </div>
+          <div
+            class="group rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl">
+            <p class="text-lg font-bold transition group-hover:text-violet-700">Git &amp; GitHub</p>
+            <p class="mt-2 text-sm text-gray-500">Version Control</p>
+          </div>
+          <div
+            class="group rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl">
+            <p class="text-lg font-bold transition group-hover:text-violet-700">Figma</p>
+            <p class="mt-2 text-sm text-gray-500">UI Design</p>
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- EXPERIENCE -->
-    <section id="experience" class="max-w-4xl mx-auto px-6 py-16  rounded-2xl bg-white shadow-xl mb-20">
-      <h2 class="section-title text-center text-3xl font-bold ">Experience</h2>
-        <h4 class="text-center py-6 font-semibold text-xl">Poster Design Competition Participant</h4>
-      <div class="mt-10 grid sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+    <section id="experience"
+      class="max-w-4xl mx-auto px-6 py-20 mt-24 rounded-2xl bg-white shadow-xl mb-30 transition duration-500 hover:shadow-2xl">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-600">
+          My Journey
+        </p>
+        <h2 class="section-title mt-1 text-center text-3xl font-bold">
+          Experience & Project
+        </h2>
+      </div>
+      <h4 class="text-center py-3 font-semibold text-xl">
+        Poster Design Competition Participant
+      </h4>
+      <div class="py-2 grid sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
         <div class="text-center">
-          <span class="text-base font-semibold">Participant • 2024</span>
+          <span class="text-base font-semibold text-violet-700">
+            Participant • 2024
+          </span>
           <div>
-            <img  src="Asset/SerifikatJanu2.png" class="py-3">
-            <p class="py-4 ">Participated in a poster design competition at
+            <img src="Asset/SerifikatJanu2.png"
+              class="py-3 w-120 h-55 mx-auto rounded-lg transition duration-300 hover:scale-[1.02]">
+            <p class="py-4 text-gray-600">
+              Participated in a poster design competition at
               Politeknik Negeri Bali, focusing on renewable
-              technology and environmental awareness.</p>
+              technology and environmental awareness.
+            </p>
           </div>
         </div>
         <div class="text-center">
-          <span class="text-base font-semibold"> Participant • 2025</span>
+          <span class="text-base font-semibold text-violet-700">
+            Participant • 2025
+          </span>
           <div>
-            <img src="Asset/Sertifikat1.png" class="py-3">
-            <p class="py-4">Participated in Technoversary 2025, a poster design
+            <img src="Asset/Sertifikat1.png" class="py-3 mx-auto w-120 h-55 rounded-lg transition duration-300 hover:scale-[1.02]">
+            <p class="py-4 text-gray-600">
+              Participated in Technoversary 2025, a poster design
               competition focused on technology and its impact
-              on society.</p>
+              on society.
+            </p>
           </div>
         </div>
       </div>
+      <!-- PROJECT -->
       <div>
-        <!--Project-->
-        <h2 class="section-title text-center py-8 text-3xl font-bold">My Project</h2>
-        
+       <div class="rounded-2xl bg-gray-50 hover:shadow-xl 
+       p-6 transition duration-700 hover:-translate-y-1">
+    
+    <h3 class="text-2xl font-bold">
+        Cube Calculator
+    </h3>
+    <p class="mt-3 text-gray-600">
+        A simple JavaScript calculator for calculating
+        the surface area and volume of a cube.
+    </p>
+    <a href="kubus.html"
+        class="mt-5 inline-block rounded-lg bg-gray-900 px-5 py-3 font-semibold text-white transition hover:bg-violet-700">
+        View Project
+    </a>
+</div>
       </div>
     </section>
-
     <!-- EDUCATION -->
-    <section id="education" class="max-w-4xl mx-auto px-6 py-16 mb-20 rounded-2xl bg-white shadow-xl">
-      <h2 class="section-title text-center text-3xl font-bold">Education</h2>
-      <div class="mt-10 mx-auto max-w-2xl  border-t pt-9"> 
-        <dl class=" grid grid-cols-[auto_1fr] gap-x-6 gap-y-4 text-ms">
-          <dt class="font-bold ">Campus</dt>
-          <dd class="font-semibold">: Universitas Pendidikan Ganesha</dd>
-          <dt class="font-bold">Faculty</dt>
-          <dd class="font-semibold">: Teknik Dan Kejuruan</dd>
-          <dt class="font-bold">Major</dt>
-          <dd class="font-semibold">: Teknik Informatika</dd>
-          <dt class="font-bold">Study Program</dt>
-          <dd class="font-semibold">: Teknologi Rekayasa Perangkat Lunak</dd>
+    <section id="education" class="scroll-mt-40 mx-auto mb-26 max-w-4xl rounded-2xl shadow-lg
+     bg-white px-6 py-16 transition duration-500 hover:shadow-2xl">
+      <!-- HEADER -->
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-600">
+          Academic
+        </p>
+        <h2 class="mt-2 text-3xl font-bold">
+          Education
+        </h2>
+      </div>
+      <!-- EDUCATION INFO -->
+      <div class="mx-auto mt-12 max-w-2xl border-t border-violet-200 pt-8">
+        <dl class="space-y-5">
+          <div
+            class="group grid grid-cols-[150px_1fr] gap-x-6 border-l-2 border-transparent pl-4 transition duration-300 hover:border-violet-500">
+            <dt class="font-bold text-violet-600">
+              Campus
+            </dt>
+            <dd class="font-semibold transition duration-300 group-hover:translate-x-1">
+              : Universitas Pendidikan Ganesha
+            </dd>
+          </div>
+          <div
+            class="group grid grid-cols-[150px_1fr] gap-x-6 border-l-2 border-transparent pl-4 transition duration-300 hover:border-violet-500">
+            <dt class="font-bold text-violet-600">
+              Faculty
+            </dt>
+            <dd class="font-semibold transition duration-300 group-hover:translate-x-1">
+              : Teknik Dan Kejuruan
+            </dd>
+          </div>
+          <div
+            class="group grid grid-cols-[150px_1fr] gap-x-6 border-l-2 border-transparent pl-4 transition duration-300 hover:border-violet-500">
+            <dt class="font-bold text-violet-600">
+              Major
+            </dt>
+            <dd class="font-semibold transition duration-300 group-hover:translate-x-1">
+              : Teknik Informatika
+            </dd>
+          </div>
+          <div
+            class="group grid grid-cols-[150px_1fr] gap-x-6 border-l-2 border-transparent pl-4 transition duration-300 hover:border-violet-500">
+            <dt class="font-bold text-violet-600">
+              Study Program
+            </dt>
+            <dd class="font-semibold transition duration-300 group-hover:translate-x-1">
+              : Teknologi Rekayasa Perangkat Lunak
+            </dd>
+          </div>
         </dl>
       </div>
     </section>
-
     <!-- CONTACT -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-12 border-t">
-      <h2 class="section-title text-center py-3 text-3xl font-bold">Contact</h2>
-      <div class="mt-10 max-w-md mx-auto space-y-3 text-sm py-6 px-6 rounded-lg bg-white shadow-">
-        <a href="mailto:komangredika@gmail.com" class="flex items-center gap-3 py-3 border-b">
-          <span>✉</span>
-          <span>komangredika@gmail.com</span>
+<section id="contact" class="w-full py-6">
+  <div class="w-full mt-4 bg-white px-6 py-14 shadow-lg transition duration-500 hover:shadow-2xl">
+    <!-- JUDUL -->
+    <div class="text-center py-3">
+      <p class="text-xl font-semibold uppercase tracking-[0.25em] text-violet-600">
+        Get In Touch
+      </p>
+      <h2 class="section-title text-4xl font-bold mb-24 border-b py-8">
+        Contact
+      </h2>
+    </div>
+    <!-- MULAI 2 KOLOM -->
+    <div class="grid gap-12 md:grid-cols-2">
+      <!-- BAGIAN KIRI -->
+      <div class="px-18 text-lg">
+        <!-- EMAIL -->
+        <a href="mailto:komangredika@gmail.com"
+          class="group flex items-center gap-3 py-3 transition duration-300">
+          <span class="text-violet-600 transition duration-300 group-hover:scale-125">
+            ✉
+          </span>
+          <span class="transition duration-300 group-hover:translate-x-1 text-2xl group-hover:text-violet-700">
+            komangredika668@gmail.com
+          </span>
         </a>
-        <a href="tel:087648927472" class="flex items-center gap-3 py-3 border-b">
-          <span>☎</span>
-          <span>087 648 927 472</span>
+        <!-- TELEPON -->
+        <a href="tel:087648927472"
+          class="group flex items-center gap-3 py-3 transition duration-300">
+          <span class="text-violet-600 transition duration-300 group-hover:scale-125">
+            ☎
+          </span>
+          <span class="transition duration-300 group-hover:translate-x-1 text-2xl group-hover:text-violet-700">
+            087 843 984 150
+          </span>
         </a>
-        <div class="flex items-start gap-3 py-3">
-          <span>📍</span>
-          <span>Jl. Kresna, Br. Pempatan, Sembung, Kec. Mengwi, Kab. Badung, Bali</span>
+        <!-- ALAMAT -->
+        <div class="group flex items-start gap-3 py-4">
+          <span class="text-violet-600 transition duration-300 group-hover:scale-125 group-hover:-translate-y-1">
+            📍
+          </span>
+          <span class="transition duration-300 group-hover:translate-x-1 text-2xl group-hover:text-violet-700">
+            Jl. Kresna, Br. Pempatan, Sembung, Kec. Mengwi,
+            Kab. Badung, Bali
+          </span>
         </div>
       </div>
-    </section>
-
+      <!-- BAGIAN KANAN -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6">
+          Send Me a Message
+        </h3>
+        <form class="space-y-5">
+          <!-- YOUR NAME -->
+          <div>
+            <label class="block mb-2 text-sm font-semibold">
+              Your Name
+            </label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition duration-300 focus:border-gray-600 focus:ring-2 focus:ring-gray-200">
+          </div>
+          <!-- EMAIL -->
+          <div>
+            <label class="block mb-2 text-sm font-semibold">
+              Email
+            </label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition duration-300 focus:border-gray-600 focus:ring-2 focus:ring-gray-200">
+          </div>
+          <!-- SARAN / COMMENT -->
+          <div>
+            <label class="block mb-2 text-sm font-semibold">
+              Saran / Comment
+            </label>
+            <textarea
+              rows="5"
+              placeholder="Write your message..."
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition duration-300 focus:border-gray-600 focus:ring-2 focus:ring-gray-200"></textarea>
+          </div>
+          <!-- BUTTON -->
+          <button
+            type="submit"
+            class="rounded-lg bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-gray-700 hover:shadow-lg">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
-
-  <footer class="py-8 text-center text-xs text-white bg-gray-900">
+  <!-- FOOTER -->
+  <footer class="py-12  text-center text-xs text-white bg-gray-900">
     © 2026 Janu Putra. Dibuat dengan niat baik dan secangkir kopi.
   </footer>
-
 </body>
 </html>

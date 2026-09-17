@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <link href="./src/output.css" rel="stylesheet">
+
+    <title>Cube Calculator</title>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-800">
+
+    <!-- Header -->
+    <header class="px-6 pt-10">
+    </header>
+    <!-- Main -->
+    <main class="px-6 py-12">
+        <div class="mx-auto max-w-5xl">
+
+             <!-- Bagian kiri -->
+            <div class="grid overflow-hidden rounded-3xl bg-white shadow-xl md:grid-cols-2">
+                <div class="flex flex-col justify-center bg-slate-900 p-8 text-white md:p-12">
+                    <div class="mx-auto max-w-5xl">
+                       <a href="index.html"
+                             class="mt-2 inline-block mb-8 rounded-lg bg-white px-5 py-3 font-semibold text-black">
+                            Kembali</a>
+                            <p class="text-slate-400">Hanya tersedia dalam bahasa Indonesia!</p>
+                                <h1 class="mt-2 text-4xl font-bold md:text-5xl">
+                                   Kalkulator Kubus</h1>
+                                         <p class="mt-8 max-w-xl text-slate-400">
+                                        Hitung luas permukaan dan volume kubus dengan mudah.</p>
+                            </div>
+                    </h2>
+                    <p class="mt-4 leading-relaxed text-slate-400">
+                        Kubus memiliki enam sisi yang sama besar. 
+                        Masukkan panjang sisi untuk mendapatkan hasil perhitungan.
+                    </p>
+                    <!-- Ilustrasi kubus -->
+                    <div class="mt- flex justify-center pt-12">
+                        <img src="Asset/Kubus.png" class="h-50 w-50"> 
+                    </div>
+
+                </div>
+
+
+                <!-- Bagian kanan -->
+                <div class="p-8 md:p-12">
+
+                    <h2 class="text-2xl font-bold">
+                        Masukkan Nilai
+                    </h2>
+
+                    <p class="mt-2 text-sm text-slate-500">
+                        Isi panjang sisi kubus.
+                    </p>
+
+                    <!-- Input -->
+                    <div class="mt-8">
+                        <label for="sisi" class="mb-2 block font-semibold">
+                            Panjang Sisi
+                        </label>
+
+                        <div class="flex items-center gap-3">
+                            <input
+                                type="number"
+                                id="sisi"
+                                placeholder="Contoh: 5"
+                                min="0"
+                                class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                            >
+
+                            <span class="rounded-xl bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-600">
+                                cm
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <!-- Tombol -->
+                    <div class="mt-6 flex gap-3">
+                        <button
+                            id="hitungBtn"
+                            class="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
+                        >
+                            Hitung
+                        </button>
+
+                        <button
+                            id="resetBtn"
+                            class="rounded-xl border border-slate-300 px-6 py-3 font-semibold transition hover:bg-slate-100"
+                        >
+                            Reset
+                        </button>
+                    </div>
+
+
+                    <!-- Hasil -->
+                    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+
+                        <div class="rounded-2xl bg-blue-50 p-5">
+                            <p class="text-sm font-medium text-blue-600">
+                                Luas Permukaan
+                            </p>
+
+                            <p id="luasHasil" class="mt-2 text-2xl font-bold text-slate-800">
+                                -
+                            </p>
+
+                            <p class="text-sm text-slate-500">
+                                cm²
+                            </p>
+                        </div>
+
+
+                        <div class="rounded-2xl bg-slate-100 p-5">
+                            <p class="text-sm font-medium text-slate-600">
+                                Volume
+                            </p>
+
+                            <p id="volumeHasil" class="mt-2 text-2xl font-bold text-slate-800">
+                                -
+                            </p>
+
+                            <p class="text-sm text-slate-500">
+                                cm³
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Rumus -->
+                    <div class="mt-8 border-t pt-6">
+                        <h3 class="font-bold">
+                            Rumus
+                        </h3>
+
+                        <div class="mt-3 space-y-2 text-sm text-slate-600">
+                            <p>Luas Permukaan = 6 × s²</p>
+                            <p>Volume = s³</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- JavaScript -->
+    <script>
+        const sisiInput = document.getElementById("sisi");
+const hitungBtn = document.getElementById("hitungBtn");
+const resetBtn = document.getElementById("resetBtn");
+
+const luasHasil = document.getElementById("luasHasil");
+const volumeHasil = document.getElementById("volumeHasil");
+
+hitungBtn.addEventListener("click", function () {
+
+    const sisi = Number(sisiInput.value);
+
+    // Cek input
+    if (sisi <= 0) {
+        alert("Masukkan panjang sisi yang lebih dari 0.");
+        return;
+    }
+
+    // Rumus kubus
+    const luasPermukaan = 6 * sisi * sisi;
+    const volume = sisi * sisi * sisi;
+
+    // Tampilkan hasil
+    luasHasil.textContent = luasPermukaan;
+    volumeHasil.textContent = volume;
+});
+
+
+resetBtn.addEventListener("click", function () {
+
+    sisiInput.value = "";
+
+    luasHasil.textContent = "-";
+    volumeHasil.textContent = "-";
+
+});
+    </script>
+
+</body>
+</html>
